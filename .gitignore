@@ -1,0 +1,10 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Never commit private Supabase server credentials.
+# config.js intentionally contains only the public anon/publishable key.
+.env
+.env.*

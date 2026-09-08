@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="siteTitle">Portfolio | Software Developer</title>
+  <meta id="metaDescription" name="description" content="Personal portfolio." />
+  <meta name="keywords" content="Your Name, software developer, computer science student, portfolio, projects, resume" />
+  <meta id="metaThemeColor" name="theme-color" content="#0a0d12" />
+  <link id="canonicalLink" rel="canonical" href="" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta id="ogTitle" property="og:title" content="Portfolio" />
+  <meta id="ogDescription" property="og:description" content="Personal portfolio." />
+  <meta id="ogImage" property="og:image" content="" />
+  <meta id="ogUrl" property="og:url" content="" />
+
+  <link rel="icon" href="data:," />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="navbar__logo" id="navLogo">Portfolio<span class="dot">.</span></a>
+
+      <nav class="navbar__links" id="navLinks" aria-label="Primary">
+        <a href="#top">home</a>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#certifications">certificates</a>
+        <a href="#achievements">achievements</a>
+        <a href="#goals">goals</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="icon-btn" data-profile-link="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="icon-btn" data-profile-link="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <button type="button" class="icon-btn" id="themeToggle" aria-label="Toggle dark and light theme" aria-pressed="false">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--small" data-resume-link>Resume</a>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="mono-label">// hello, I'm</p>
+          <h1 class="hero__name" id="heroName">Portfolio Owner</h1>
+          <p class="hero__role" id="heroRole"></p>
+          <p class="hero__intro" id="heroIntro">
+            I build practical software, explore emerging technologies, solve algorithmic problems,
+            and continuously work toward becoming a strong software engineer. This is where I share
+            what I'm learning and what I've built along the way.
+          </p>
+
+          <div class="status-pill" id="availabilityPill">
+            <span class="status-dot"></span>
+            <span id="availabilityText">Open to opportunities</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View my projects</a>
+            <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Download resume</a>
+            <a href="#contact" class="btn btn--ghost">Contact me</a>
+          </div>
+
+          <ul class="hero__socials" aria-label="Social profiles">
+            <li><a href="#" id="footerGithub" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#" id="footerLinkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://leetcode.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#" id="footerEmail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="hero__photo reveal">
+          <div class="hero__photo-frame">
+            <img id="profilePhoto" src="" alt="Portfolio profile photo" width="420" height="420" />
+          </div>
+          <div class="hero__photo-tag">
+            <i class="fa-solid fa-terminal"></i>
+            <span id="heroTagline">Building, learning, and shipping.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// about</span><span id="aboutHeading">About me</span></h2>
+
+        <div class="about__grid">
+          <div class="about__text reveal" id="aboutText"></div>
+          <div class="quick-facts reveal" aria-label="Quick facts">
+            <dl id="quickFactsList"></dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// education</span>Education</h2>
+        <div class="timeline" id="educationTimeline"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// skills</span>Technical skills</h2>
+        <div class="skills__grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// projects</span>Selected projects</h2>
+
+        <div class="filter-bar" id="projectFilters" role="tablist" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn is-active" data-filter="All" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-filter="Web" role="tab" aria-selected="false">Web</button>
+          <button type="button" class="filter-btn" data-filter="AI/ML" role="tab" aria-selected="false">AI/ML</button>
+          <button type="button" class="filter-btn" data-filter="Data" role="tab" aria-selected="false">Data</button>
+          <button type="button" class="filter-btn" data-filter="Other" role="tab" aria-selected="false">Other</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// certifications</span>Certifications</h2>
+        <div class="cert__grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <!-- Certificate modal -->
+    <div class="modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle" hidden>
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__content">
+        <button type="button" class="modal__close" id="certModalClose" aria-label="Close certificate preview">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="certModalImage" src="" alt="" />
+        <div class="modal__meta">
+          <h3 id="certModalTitle"></h3>
+          <p id="certModalOrg"></p>
+          <p id="certModalMeta" class="mono-label"></p>
+          <a id="certModalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--small">Verify credential</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section section--alt" id="achievements">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// achievements</span>Achievements</h2>
+        <div class="achievements__grid" id="achievementsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ GOALS / ROADMAP ============ -->
+    <section class="section" id="goals">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// roadmap</span>Where I'm headed</h2>
+        <p class="section__lead">My short and long-term goals, and how I'm working toward them.</p>
+        <div class="roadmap" id="roadmap"></div>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING JOURNEY ============ -->
+    <section class="section section--alt" id="learning">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// learning</span>Currently learning</h2>
+        <div class="learning__grid" id="learningGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CODING PROFILES ============ -->
+    <section class="section" id="coding">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// profiles</span>Coding profiles</h2>
+        <div class="profiles__grid" id="profilesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section class="section section--alt" id="resume">
+      <div class="container resume__box">
+        <div>
+          <h2 class="section__title"><span class="mono-label">// resume</span>Resume</h2>
+          <p class="section__lead">A one-page summary of my education, skills, and projects.</p>
+        </div>
+        <div class="resume__actions">
+          <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">View resume</a>
+          <a href="assets/resume/resume.pdf" download class="btn btn--primary">Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title"><span class="mono-label">// contact</span>Get in touch</h2>
+        <p class="section__lead">
+          I'm happy to hear about opportunities, collaborations, or just to talk about code.
+          The easiest way to reach me is by email.
+        </p>
+
+        <div class="contact__grid">
+          <a class="contact__card" id="contactEmail" href="#">
+            <i class="fa-solid fa-envelope"></i>
+            <span id="contactEmailText">Email</span>
+          </a>
+          <a class="contact__card" id="contactGithub" href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span id="contactGithubText">GitHub</span>
+          </a>
+          <a class="contact__card" id="contactLinkedin" href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span id="contactLinkedinText">LinkedIn</span>
+          </a>
+        </div>
+
+        <a href="#" id="contactCta" class="btn btn--primary contact__cta">Email me</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p id="footerText">Designed &amp; built by Portfolio Owner</p>
+      <p id="footerCopyright">&copy; 2026 Portfolio Owner. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="#" id="footerGithub" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" id="footerLinkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" id="footerEmail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js" defer></script>
+  <script src="js/portfolioService.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
