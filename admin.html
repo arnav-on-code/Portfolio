@@ -1,56 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfolio CMS — Admin</title>
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="admin.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="refresh" content="0;url=index.html">
+<title>Redirecting…</title>
+<script>location.replace("index.html");</script>
 </head>
-<body class="admin-body">
-<div id="loginView" class="login-shell">
-  <div class="login-card">
-    <span class="mono-label">// private area</span><h1>Portfolio Admin</h1>
-    <p>Sign in with the Supabase Auth account that owns this portfolio.</p>
-    <form id="loginForm">
-      <label>Email<input id="loginEmail" type="email" autocomplete="username" required></label>
-      <label>Password<input id="loginPassword" type="password" autocomplete="current-password" required></label>
-      <button class="btn btn--primary" type="submit">Sign in <i class="fa-solid fa-arrow-right"></i></button>
-      <div id="loginMessage" class="form-message" role="alert"></div>
-    </form>
-  </div>
-</div>
-
-<div id="adminApp" class="admin-layout" hidden>
-  <aside class="admin-sidebar">
-    <div class="admin-brand"><span class="admin-brand__mark">P</span><div><strong>Portfolio CMS</strong><small>Admin dashboard</small></div></div>
-    <nav id="adminNav">
-      <button data-section="dashboard" class="is-active"><i class="fa-solid fa-chart-line"></i>Dashboard</button>
-      <button data-section="profile"><i class="fa-solid fa-user"></i>Profile</button>
-      <button data-section="about"><i class="fa-solid fa-address-card"></i>About</button>
-      <button data-section="education"><i class="fa-solid fa-graduation-cap"></i>Education</button>
-      <button data-section="skills"><i class="fa-solid fa-code"></i>Skills</button>
-      <button data-section="projects"><i class="fa-solid fa-folder-open"></i>Projects</button>
-      <button data-section="certificates"><i class="fa-solid fa-certificate"></i>Certificates</button>
-      <button data-section="achievements"><i class="fa-solid fa-trophy"></i>Achievements</button>
-      <button data-section="goals"><i class="fa-solid fa-route"></i>Goals</button>
-      <button data-section="learning"><i class="fa-solid fa-book-open"></i>Learning</button>
-      <button data-section="socialProfiles"><i class="fa-solid fa-link"></i>Social Profiles</button>
-      <button data-section="resume"><i class="fa-solid fa-file-pdf"></i>Resume</button>
-      <button data-section="contact"><i class="fa-solid fa-envelope"></i>Contact</button>
-      <button data-section="siteSettings"><i class="fa-solid fa-sliders"></i>Site Settings</button>
-    </nav>
-    <div class="admin-sidebar__bottom"><a href="index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open portfolio</a><button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button></div>
-  </aside>
-
-  <main class="admin-main">
-    <header class="admin-topbar"><button id="sidebarToggle" class="icon-btn mobile-only" aria-label="Open admin menu"><i class="fa-solid fa-bars"></i></button><div><span class="mono-label">// control center</span><h1 id="pageHeading">Dashboard</h1></div><div class="admin-actions"><button id="previewBtn" class="btn btn--outline btn--small"><i class="fa-solid fa-eye"></i> Preview</button><button id="saveBtn" class="btn btn--outline btn--small"><i class="fa-solid fa-floppy-disk"></i> Save Draft</button><button id="publishBtn" class="btn btn--primary btn--small"><i class="fa-solid fa-cloud-arrow-up"></i> Publish</button></div></header>
-    <div id="toast" class="toast" role="status"></div>
-    <div id="editor" class="admin-content"></div>
-  </main>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="config.js"></script><script src="js/portfolioService.js"></script><script src="js/auth.js"></script><script src="js/admin.js"></script>
-</body></html>
+<body></body>
+</html>
